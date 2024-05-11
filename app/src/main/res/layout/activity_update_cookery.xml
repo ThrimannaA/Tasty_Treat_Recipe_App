@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UpdateCookeryActivity"
+    android:background="@drawable/gradiant_background4">
+    >
+
+    <TextView
+        android:id="@+id/editNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Edit the Recipie 🍹"
+        android:fontFamily="@font/poppins_black"
+        android:textColor="@color/purple"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/updateSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:tint="@color/purple"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/editNoteHeading"
+        android:layout_marginEnd="6dp"/>
+
+    <EditText
+        android:id="@+id/updateTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/editNoteHeading"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/purple_border"
+        android:fontFamily="@font/poppins_bold"
+        android:hint="Edit the Recipe Title"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/updateContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/updateTitleEditText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/purple_border"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="top"
+        android:hint="Edit the description"
+        android:padding="12dp"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>
+
+
+
+
+
