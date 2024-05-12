@@ -49,16 +49,8 @@ class CookeryAdapter(private var cookery: List<Cookery>, context: Context) : Rec
 
     }
 
-    fun refreshdata(newCookery: List<Cookery>) {
-        val oldSize = cookery.size
-        cookery = newCookery
-        val newSize = cookery.size
-
-        if (oldSize == newSize) {
-            notifyItemRangeChanged(0, newSize)
-        } else {
-            notifyDataSetChanged()
-        }
+    fun refreshdata(newCookery: List<Cookery>){
+        cookery=newCookery
+        notifyDataSetChanged()
     }
-
 }
