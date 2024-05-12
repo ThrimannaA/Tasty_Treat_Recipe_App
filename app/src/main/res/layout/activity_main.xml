@@ -8,12 +8,27 @@
     tools:context=".MainActivity"
     android:background="@drawable/gradiant_background2">
 
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:queryHint="Search here..."
+            app:iconifiedByDefault="false"
+            app:queryBackground="@android:color/transparent"
+            android:layout_marginTop="10dp"
+            android:maxWidth="340dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/searchview_background"/>
+
+
     <TextView
         android:id="@+id/notesHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/poppins_black"
         android:text="~👩‍🍳 NEW RECIPIES 👩‍🍳~"
         android:layout_marginStart="18dp"
@@ -25,7 +40,7 @@
         android:id="@+id/notesRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="120dp"
         android:padding="16dp"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
